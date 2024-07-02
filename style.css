@@ -31,12 +31,14 @@ body {
 	align-items: center;
 	width: 80%;
 	overflow: hidden;
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .main {
-  display: flex;
-  width: 80%;
+	display: flex;
+	width: 80%;
+	box-shadow: 2px 4px 10px #ffffff;
+	border: 1px solid #333;
 }
 
 .wrapper {
@@ -84,54 +86,60 @@ button:focus {
 	outline: none;
 }
 
-
 /* -----------------------------------------------------SHOWHIODE--- */
 
 .showDiv {
 	display: flex;
 	flex-direction: column;
-  background-color: #fff;
-  align-items: center;
-  width: 80%;
-  margin-top: 20px;
-  color: #fff;
+	background-color: #fff;
+	border: 1px solid #333;
+	align-items: center;
+	width: 80%;
+	margin-top: 20px;
+	color: #fff;
+	box-shadow: 2px 4px 10px #ffffff;
 }
 
 .showDivWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
 }
 
 .showDivWrapper.active {
-  display: block;
+	display: block;
 }
 
 .textColor {
-  color: #333;
+	color: #333;
 }
 
 .change {
-  background-color: grey;
-  width: 30%;
-  align-items: center;
-  justify-content: center;
+	background-color: grey;
+	width: 30%;
+	align-items: center;
+	justify-content: center;
 }
 
 /* ---------------------------COUNTER--------------------- */
 .containerCounter {
-  background-color: #fff;
-  color: #333;
-  width: 80%;
-  margin-top: 30px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+	background-color: #fff;
+	color: #333;
+	width: 80%;
+	margin-top: 30px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 4px 10px #ffffff;
+	border: 1px solid #333;
+	margin-bottom: 30px;
 }
 
 .bgc {
-  background-color: #333;
-  color: #fff;
+	background-color: gray;
+	border: 1px solid #333;
+	color: #fff;
+	margin-bottom: 5px;
 }
