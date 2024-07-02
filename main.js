@@ -25,10 +25,9 @@ document.querySelector(".change").addEventListener("click", function () {
 	let divs = document.querySelectorAll(".showDivWrapper");
 	divs.forEach((div) => div.classList.toggle("active"));
 });
-
 // -------------------------------------COUNTER-----------------------------
-let counter = 0;
 
+let counter = 0;
 document.getElementById("increment").addEventListener("click", function () {
 	counter++;
 	document.getElementById("counterValue").textContent = counter;

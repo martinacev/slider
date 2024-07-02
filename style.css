@@ -60,16 +60,16 @@ body {
 }
 
 .div1 {
-	background-color: red;
+	background-color: lightgray;
 }
 .div2 {
-	background-color: blue;
+	background-color: darkgray;
 }
 .div3 {
-	background-color: green;
+	background-color: gray;
 }
 .div4 {
-	background-color: yellow;
+	background-color: rgb(78, 77, 77);
 }
 
 button {
@@ -113,7 +113,7 @@ button:focus {
 }
 
 .change {
-  background-color: green;
+  background-color: grey;
   width: 30%;
   align-items: center;
   justify-content: center;
