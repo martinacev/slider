@@ -10,17 +10,45 @@
 	</head>
 	<body>
 		<div class="container">
-			<button class="prev">left</button>
-			<div class="wrapper">
-				<div class="slider">
-					<div class="slide div1">1 </div>
-					<div class="slide div2">2</div>
-					<div class="slide div3">3</div>
-					<div class="slide div4">4</div>
+			<!-- ------------------ SLIDER ---------------- -->
+			<div class="main">
+				<button class="prev">left</button>
+				<div class="wrapper">
+					<div class="slider">
+						<div class="slide div1">1</div>
+						<div class="slide div2">2</div>
+						<div class="slide div3">3</div>
+						<div class="slide div4">4</div>
+					</div>
+				</div>
+				<button class="next">right</button>
+			</div>
+
+			<!--------------------- SHOW HIDE DIV------------------------->
+
+			<div class="showDiv">
+				<div class="showDivWrapper active">
+					<p class="textColor">First Div</p>
+				</div>
+				<div class="showDivWrapper">
+					<p class="textColor">Second Div</p>
+				</div>
+				<button class="change">Change</button>
+			</div>
+
+			<!--------------------- SHOW HIDE DIV------------------------->
+
+			<div class="containerCounter">
+				<div class="counter">
+					current: count: <span id="counterValue">0</span>
+				</div>
+				<div class="buttons">
+					<button class="bgc" id="increment">+1</button>
+					<button class="bgc" id="decrement">-1</button>
 				</div>
 			</div>
-			<button class="next">right</button>
 		</div>
+
 		<script src="main.js"></script>
 	</body>
 	<script></script>

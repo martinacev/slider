@@ -18,8 +18,8 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
-	color: #333;
+	background-color: #333;
+	color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,6 +31,12 @@ body {
 	align-items: center;
 	width: 80%;
 	overflow: hidden;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  width: 80%;
 }
 
 .wrapper {
@@ -46,11 +52,11 @@ body {
 .slide {
 	min-width: 100%;
 	height: 300px;
-  display: flex;
-  align-items: center;
-  font-size: 100px;
-  color: #fff;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 100px;
+	color: #fff;
+	justify-content: center;
 }
 
 .div1 {
@@ -68,12 +74,64 @@ body {
 
 button {
 	padding: 10px;
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #333;
 	border: none;
 	cursor: pointer;
 }
 
 button:focus {
 	outline: none;
+}
+
+
+/* -----------------------------------------------------SHOWHIODE--- */
+
+.showDiv {
+	display: flex;
+	flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.showDivWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.showDivWrapper.active {
+  display: block;
+}
+
+.textColor {
+  color: #333;
+}
+
+.change {
+  background-color: green;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------COUNTER--------------------- */
+.containerCounter {
+  background-color: #fff;
+  color: #333;
+  width: 80%;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.bgc {
+  background-color: #333;
+  color: #fff;
 }

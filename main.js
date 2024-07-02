@@ -1,3 +1,5 @@
+// -----------------------SLIDER--------------------------
+
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 const slider = document.querySelector(".slider");
@@ -15,4 +17,24 @@ nextButton.addEventListener("click", () => {
 		index++;
 		slider.style.transform = `translateX(${-index * 100}%)`;
 	}
+});
+
+// --------------------------SHOW HIDE DIV -----------------------------//
+
+document.querySelector(".change").addEventListener("click", function () {
+	let divs = document.querySelectorAll(".showDivWrapper");
+	divs.forEach((div) => div.classList.toggle("active"));
+});
+
+// -------------------------------------COUNTER-----------------------------
+let counter = 0;
+
+document.getElementById("increment").addEventListener("click", function () {
+	counter++;
+	document.getElementById("counterValue").textContent = counter;
+});
+
+document.getElementById("decrement").addEventListener("click", function () {
+	counter--;
+	document.getElementById("counterValue").textContent = counter;
 });
