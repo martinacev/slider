@@ -30,10 +30,23 @@ document.querySelector(".change").addEventListener("click", function () {
 let counter = 0;
 document.getElementById("increment").addEventListener("click", function () {
 	counter++;
-	document.getElementById("counterValue").textContent = counter;
+	document  .getElementById("counterValue").textContent = counter;
 });
 
 document.getElementById("decrement").addEventListener("click", function () {
 	counter--;
 	document.getElementById("counterValue").textContent = counter;
 });
+
+// -----------------------------------DROP DOWN--------------------------
+    const dropDownTrigger = document.querySelector('.dropDown');
+    const dropDownItems = document.querySelectorAll('.dropdown-item');
+
+
+  dropDownTrigger.addEventListener("click", () => {
+	dropDownItems.forEach(item => {
+		item.classList.toggle("show")
+	})
+  })
+  
+  
